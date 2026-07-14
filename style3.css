@@ -1,0 +1,36 @@
+.text {
+font-family: Roboto, Optima, Arial, sans-serif; 
+font-weight: 100;
+font-variant: normal;
+font-size: 12px;
+
+	}
+
+html { 
+margin : 0; 
+padding : 0; 
+} 
+BODY { 
+max-width : 2000px; 
+margin : 8 auto 
+} 
+
+.head {
+font-family: Roboto, Optima, Arial,  sans-serif;
+font-size: 14px;
+font-weight: bold; 100
+color: #000000;
+	}
+
+a:link {
+	color: #969490;
+	}
+
+a:visited {
+	color: #696969;
+	}
+
+a:hover {
+	color: #0099FF;
+		}
+

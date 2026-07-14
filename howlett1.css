@@ -1,0 +1,31 @@
+A:link {color: #a0a0a0; text-decoration: none;}
+A:active {color: #FF0000; text-decoration: none;}
+A:visited {color: #ffcc00; text-decoration: none;}
+A:hover {color: #FFFF99;}
+BODY {color: #FFFFFF; 
+		font-family: arial, sans-serif; font-size: 11pt; 
+
+		margin-top: 0px; margin-left: 0px; margin-right: 0px; text-align: center;
+		scrollbar-face-color: #003F6C; scrollbar-shadow-color: #003155; scrollbar-highlight-color: #004F88; scrollbar-3dlight-color: #0061A8; scrollbar-darkshadow-color: #001B2F; scrollbar-track-color: #002542; scrollbar-arrow-color: #FFCC00}
+P {text-align: justify; font-size: 11pt; margin-left: 10px; margin-right: 10px;}
+H1 {color: #FFDC51; font-size: 35pt; font-weight: bold; text-align:left; margin-left: 10px; margin-right: 10px; height:35; filter:DropShadow(Color=#001B2F, OffX=2, OffY=2);}
+H2 {color: #FFDC51; font-size: 25pt; font-weight: bold; text-align:left; margin-left: 10px; margin-right: 10px; height:25; filter:DropShadow(Color=#001B2F, OffX=2, OffY=2);}
+H3 {color: #FFDC51; font-size: 18pt; font-weight: bold; text-align:left; margin-left: 10px; margin-right: 10px; height:18; filter:DropShadow(Color=#001B2F, OffX=2, OffY=2);}
+H4 {color: #FFDC51; font-size: 16pt; font-weight: normal; text-align:left; margin-left: 10px; margin-right: 10px; height:16; filter:DropShadow(Color=#001B2F, OffX=2, OffY=2);}
+H5 {color: #FFDC51; font-size: 12pt; font-weight: bold; text-align:left; margin-left: 10px; margin-right: 10px; height:12; filter:DropShadow(Color=#001B2F, OffX=2, OffY=2);}
+H6 {color: #FFDC51; font-size: 11pt; font-weight: normal; text-align: left; margin-left: 10px; margin-right: 10px; height:12; filter:DropShadow(Color=#001B2F, OffX=2, OffY=2);}
+TD.right {vertical-align: top; text-align: right;}
+TD.contrast {background: #003F6C;}
+LI {color: #FFDC51; text-align: justify; margin-left: 10px; margin-right: 10px;}
+.quote {font-size: 10pt; color: #80BFFF;}
+.footnote {font-size: 8pt; font-weight: bold; vertical-align: super;}
+.indent {margin-left: 50pt;}
+.menu_heading {color: #FFDC51; background: #003F6C; padding-left: 10px; padding-right: 10px;}
+.menu_sub_heading_right {padding-right: 3px; padding-left: 10px; width: 100%; background-color: rgb(000, 043, 076);}
+.menu_sub_heading_left {padding-right: 10px; padding-left: 3px; width: 100%; background-color: rgb(000, 043, 076);}
+.menu_item_right {padding-left: 10px; padding-right: 10px;}
+.menu_item_left {padding-left: 10px; padding-right: 10px;}
+.menu_item {font-size: 8pt; color: #FFCC00; width: 100%; padding-left: 10px; padding-right: 10px;}
+.plain {font-family: courier, monospace;}
+.inputbutton { font-size: 11pt; color: #FFFFFF; font-weight: bold; background: #C80000; border-top:#EF0000 solid thin; border-bottom:#840000 solid thin; border-right:#A60000 solid thin; border-left:#A60000 solid thin; }
+.sup {font-size: smaller; vertical-align: super;}

@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>News Tickers</title>
+<body bgcolor="#333399">
+<font color="a0a0a0">
+<center>
+ <table>
+ <p>
+<TR ALIGN="RIGHT">
+<td><font color="a0a0a0">Associated Press:
+</td>
+ <TD ALIGN="RIGHT">
+ <A HREF="caption.pl" TARGET="side">
+ <APPLET CODE="NewsTicker.class" CODEBASE="http://ticker.ap.org/ticker5" WIDTH="525" HEIGHT="15" ALIGN="top">
+ <PARAM NAME="copyright" VALUE="Detlef Beyer">
+ <PARAM NAME="offh" VALUE="525">
+ <PARAM NAME="offv" VALUE="13">
+ <PARAM NAME="imgh" VALUE="10">
+ <PARAM NAME="imgv" VALUE="5">
+ <PARAM NAME="imghb" VALUE="5">
+ <PARAM NAME="imgvb" VALUE="5">
+ <PARAM NAME="spot" VALUE="no">
+ <PARAM NAME="size" VALUE="10">
+ <PARAM NAME="font" VALUE="arial, sans-serif">
+ <PARAM NAME="style" VALUE="plain">
+ <PARAM NAME="lines" VALUE="1">
+ <PARAM NAME="pause" VALUE="300">
+ <PARAM NAME="animtype" VALUE="13">
+ <PARAM NAME="debug" VALUE="no">
+ <PARAM NAME="gifon" VALUE="no">
+ <PARAM NAME="ranstart" VALUE="no">
+ <PARAM NAME="path" VALUE="http://ticker.ap.org/ticker5/txt/ticker.txt">
+ <PARAM NAME="background" VALUE="333399">
+ <PARAM NAME="textcolor" VALUE="a0a0a0">
+ <PARAM NAME="spotcolor" VALUE="ffffFF">
+ <PARAM NAME="reload" VALUE="yes">
+ <PARAM NAME="speed" VALUE="3.5">
+ <PARAM NAME="break" VALUE="no"><BR>
+ &nbsp;
+ </APPLET></A></TD>
+ </tr>
+ </table>
+ <p>
+ Various Sources:
+ <applet code="sevenAMNewsTicker.class" codebase="http://www.7am.com/java" width=450 height=15>
+ <param name="channels" VALUE="+WORLDnews ">
+ </applet>
+ <p>
+BBC Ticker: <iframe height="15" marginwidth="0" width="629" scrolling="no" src="http://news.bbc.co.uk/ticker/ticker.45413.stm" frameborder="0" marginheight="0">
+<applet height="15" code="lightticker2.class" codebase="/java/" width="629">
+<param name="bgcolor" value="#ffffff" />
+<param name="linkcolor" value="#0000ff" />
+<param name="hdrcolor" value="#0000ff" />
+<param name="textcolor" value="#000000" />
+
+<param name="RegionID" value="-1" />
+<param name="SubRegionID" value="-1" />
+<param name="LanguageID" value="3" />
+<param name="text_first_line" value="YES" />
+																			
+<param name="sectionId" value="45413" />
+</applet>
+</iframe>
+<p>
+ERF Miscellaneous:
+<script LANGUAGE="Javascript">
+   // global_article is used to allow multiple categories
+      //
+	 var global_article = new Array();
+	    var global_article_counter = 0;
+	       var article = null;
+		  var early_exit = 1;
+		     var erf_text = 0;
+		       </script>
+
+
+			 <!-- Put here what section you want the news in, -->
+			   <!-- for example, international.js for -->
+			     <!-- international news health.js for health news and -->
+			       <!-- so on... A full list is      -->
+				 <!-- available at  www.EasyByte.com  -->
+				  
+				   <script LANGUAGE="JavaScript" src="http://www.erfilter.com/international.js"></script>
+				    
+				      <script LANGUAGE="Javascript">
+					// load global_article array with articles from category
+					  //
+					    if (article != null)
+					      {
+						 early_exit = 0;
+
+						    for (var article_counter = 0; article_counter < article.length; article_counter++)
+						       {
+							   global_article[global_article_counter] = article[article_counter];
+							       global_article[global_article_counter].url += "' TARGET='_top";
+								   global_article[global_article_counter].document_url += "' TARGET='_top";
+								       global_article_counter++;
+									  }
+									    }
+									      </script>
+										<script LANGUAGE="Javascript">
+										  if (global_article.length == 0)
+										    {
+										       if (early_exit)
+											  {
+											      document.writeln("<center>Please reload this page to view the News/Information</center>");
+												 }
+												    else
+												       {
+													   //
+													       // Something has gone wrong ERF must not be running or the new page (.js) file
+														   // has been incorrectly specified. 
+														       //
+															   early_exit = 1;
+															      }
+																}
+																  </script>
+																    <script LANGUAGE="Javascript">
+
+																      // Put here the number of headlines you wish to display on your web site:
+																	//
+																	  var numberofarticles = 10;
+
+																	    // Check to make sure you are not asking for more than there is available
+																	      //
+																		if (numberofarticles > global_article.length)
+																		  {
+																		     numberofarticles = global_article.length;
+																		       }
+																			 if (global_article.length < numberofarticles)
+																			   {
+																			      numberofarticles = global_article.length;
+																				}
+
+																				  var article = new Array(new sa("http://www.easybyte.com/products/efilter.html","News by ERF - add some to your website","Powered by ERF","text"," "," ","http://www.easybyte.com/products/efilter.html",global_article[0].harvest_time," "," "))
+																				    global_article[numberofarticles] = article[0];  
+																				      numberofarticles = numberofarticles + 1;
+
+																					if (!early_exit)
+																					  {
+																					     var webfeed_heading = "";
+																						var width = "450";
+																						   var item_spacing = "1";
+																						      var cluster_bgcolor = "333399";
+																							 var cluster_border = "0";
+																							    var heading_display = "Yes";
+																							       var time_display = "No";
+																								  var cell_spacing = "0";
+																								     var cell_padding = "1";
+																									var heading_bgcolor = "f4fff4";
+																									   var heading_font = "Verdana, Arial,Helvetica, sans-serif";
+																									      var heading_font_size = "-2";
+																										 var heading_fgcolor = "0000ff";
+																										    var headline_bgcolor = "f4fff4";
+																										       var headline_font = "Verdana, Arial,Helvetica, sans-serif";
+																											  var headline_font_size = "-2";
+																											     var headline_fgcolor = "0000ff";
+																												var source_font = "Verdana, Arial,Helvetica, sans-serif";
+																												   var source_font_size = "-2";
+																												      var source_fgcolor = "000000";
+																													 var access_font = "Verdana, Arial,Helvetica, sans-serif";
+																													    var access_font_size = "-2";
+																													       var access_fgcolor = "000000";
+																														  var time_font = "Verdana, Arial,Helvetica, sans-serif";
+																														     var time_font_size = "-2";
+																															var time_fgcolor = "000000";
+																															   var time = new Array(global_article.length);
+
+																															      // Print out the table containing the headlines
+																																 document.writeln("<center><table BORDER="+cluster_border+" BGCOLOR='#"+cluster_bgcolor+"' WIDTH='"+width+"' CELLPADDING=2 CELLSPACING=0>");
+																																    document.writeln("<tr><td  align='center'><img src='http://www.easybyte.com/space.gif' border='0'></td></tr>")
+																																       document.writeln("<tr><td><center><table bgcolor='#333399"+cluster_bgcolor+"' CELLPADDING="+cell_padding+" CELLSPACING="+cell_spacing+"  WIDTH='100%'>");
+
+																																	  if (heading_display == "Yes")
+																																	     {
+																																		 // Print a new category heading
+																																		     document.writeln("<tr BGCOLOR='#"+heading_bgcolor+"'><TD>");
+																																			 document.writeln("<font size="+heading_font_size+" FACE="+heading_font+" COLOR='#"+heading_fgcolor+"'>");
+																																			     document.writeln("<B>"+webfeed_heading+"</B></FONT></TD></TR>");
+																																				}
+
+																																				   // Start loop for articles
+																																				      //
+																																					 // Put as many headlines in as has been specified
+																																					    //
+																																					       for (var counter=0; counter < numberofarticles; counter++)
+																																						  {
+																																						      if ((counter == (global_article.length - 1)) && erf_text == 1) 
+																																							  { 
+																																							       headline_fgcolor = source_fgcolor; 
+																																								    time_display = "No";
+																																									}
+
+																																									    // Output the HTML for the headline
+																																										//
+																																										    document.writeln("<TR BGCOLOR='#"+headline_bgcolor+"'><TD><A HREF='"+global_article[counter].url+"' >");
+																																											document.writeln("<FONT SIZE="+headline_font_size+" FACE="+headline_font+" COLOR='#"+headline_fgcolor+"'");
+																																											    document.writeln(">"+global_article[counter].headline_text+"...</FONT></A><br>");
+
+																																												
+																																												    // Print out the source of the Headline
+																																													//
+																																													    if ((counter != (global_article.length - 1)) || erf_text != 1)
+																																														{
+																																														     document.writeln("<A HREF='"+global_article[counter].document_url+"' >");
+																																															  document.writeln("<FONT FACE="+source_font+" SIZE="+source_font_size+" COLOR='#"+source_fgcolor+"'>");
+																																															       document.writeln(""+global_article[counter].source+"</FONT></A>  ");
+																																																   }
+																																																       
+
+																																																	   // Print out reg/sub if appropriate
+																																																	       //
+																																																		   if (global_article[counter].access_status == "sub" || global_article[counter].access_status == "reg")
+																																																		       {
+																																																			    document.writeln(" <A HREF='"+global_article[counter].access_registration+"'>");
+																																																				 document.writeln("<FONT FACE="+access_font+" SIZE="+access_font_size);
+																																																				      document.writeln(" COLOR='#"+access_fgcolor+"'>"+global_article[counter].access_status+"</FONT></A>  ");
+																																																					  }
+
+																																																					      // Space the headlines out if the time is not going to be displayed
+																																																						  //
+																																																						      if (time_display == "No")
+																																																							  {
+																																																							       document.writeln("<br><br>");
+																																																								   }
+
+																																																								       // Print out the harvest time
+																																																									   if (time_display == "Yes")
+																																																									       {
+																																																										    // Make a new date object
+																																																											 //
+																																																											      time[counter] = new Date(global_article[counter].harvest_time);
+																																																												   time[counter].setHours(time[counter].getHours() - (time[counter].getTimezoneOffset() / 60 ));
+																																																													document.writeln("<FONT FACE="+time_font+" SIZE="+time_font_size+" color='#"+time_fgcolor+"'>");
+																																																													     document.writeln(""+time[counter].toString()+"</FONT>");
+																																																														 } 
+
+																																																														     document.writeln("</td></tr><tr bgcolor='#"+headline_bgcolor+"'><TD BGCOLOR='#"+headline_bgcolor+"' HEIGHT="+item_spacing+"></TD></TR>");
+																																																															 }
+																																																															    // End of the table
+																																																															       //
+																																																																  document.writeln("</TABLE></CENTER></TD></TR></TABLE>");
+																																																																     document.writeln("</CENTER>");
+
+																																																																       } 
+																																																																	 </script>
+
+</body>
+</html>

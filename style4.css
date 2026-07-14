@@ -1,0 +1,36 @@
+.text {
+font-family: Georgia, "Times New Roman", Times, serif;
+font-variant: normal;
+font-size: 12px;
+
+	}
+
+html { 
+margin : 0; 
+padding : 0; 
+} 
+BODY { 
+max-width : 1450px; 
+margin-left:auto; 
+margin-right:auto; 
+} 
+
+.head {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: bold;
+color: #000000;
+	}
+
+a:link {
+	color: #696969;
+	}
+
+a:visited {
+	color: #696969;
+	}
+
+a:hover {
+	color: #0099FF;
+		}
+
