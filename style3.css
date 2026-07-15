@@ -5,7 +5,7 @@ body {
   font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
 	max-width : 2000px; 
-margin : 8 auto 
+margin: 8px auto;
 }
 
 h1, h2, h3, b, strong { font-weight: 600; }
