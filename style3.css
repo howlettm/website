@@ -1,10 +1,13 @@
-.text {
-font-family: Roboto, Optima, Arial, sans-serif; 
-font-weight: 100;
-font-variant: normal;
-font-size: 12px;
 
-	}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, b, strong { font-weight: 600; }
+
 
 html { 
 margin : 0; 
