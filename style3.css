@@ -4,7 +4,7 @@ html {
 }
 body {
   font-family: "Times New Roman", Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.1;
   max-width: 2000px;
   margin: 8px auto;
   padding: 0 12px;   /* keeps text off screen edges on mobile */
@@ -12,7 +12,7 @@ body {
 h1, h2, h3, b, strong { font-weight: 600; }
 .head {
   font-family: inherit;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: #000000;
 }
