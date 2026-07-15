@@ -22,7 +22,18 @@ h1, h2, h3, b, strong { font-weight: 600; }
   color: #000000;
 }
 
-a:link    { color: #1a6bb5; }   /* readable blue */
-a:visited { color: #767472; }   /* your muted gray, now meaning "already read" */
-a:hover   { color: #0099FF; }
+a:link {
+  color: #5f5e5a;
+  text-decoration-color: #c8c6c2;
+ 
+}
 
+a:visited {
+  color: #8a8884;
+  text-decoration-color: #d8d6d2;
+}
+
+a:hover {
+  color: #0099FF;
+  text-decoration-color: #0099FF;
+}
