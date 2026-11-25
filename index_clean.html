@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Mobile only — desktop never matches this query */
+@media (max-width: 768px) {
+
+  body {
+    margin: 10px;
+    font-size: 17px;          /* readable without pinch-zoom */
+    line-height: 1.0;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Collapse layout tables into stacked blocks */
+  table, tbody, tr, td, th {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Images and embeds shrink to fit the screen */
+  img, iframe, embed, object, video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Bigger tap targets for your dense link rows */
+  a {
+    display: inline-block;
+    padding: 4px 6px;
+    line-height: 1.8;
+  }
+
+  /* Kill any hard-coded widths on containers */
+  div, p, blockquote {
+    max-width: 100% !important;
+    width: auto !important;
+  }
+}
+</style>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Michael Howlett</title>
+<link rel="stylesheet" href="style3.css">
+  <style>
+  body {
+    zoom: 74%; /* Reduces magnification */
+  }
+</style>
+  <base target="_blank">
+<style>
+/* Rollover tile grid: replaces 150+ inline onmouseover/onmouseout swaps */
+.tiles { --w: 50px; --h: 80px; --gap: 4px;
+  display: grid; grid-template-columns: repeat(auto-fill, var(--w));
+  gap: var(--gap); justify-content: start; }
+.tile { position: relative; display: block; width: var(--w); height: var(--h);
+  overflow: hidden; border-radius: 3px; background: #fff; text-decoration: none; }
+.tile img { position: absolute; inset: 0; width: 100%; height: 100%;
+  border: 0; transition: opacity .18s ease; }
+.tile .rest { object-fit: cover;   opacity: 1; }
+.tile .over { object-fit: contain; opacity: 0; padding: 2px; box-sizing: border-box; }
+.tile:hover .rest, .tile:focus-visible .rest { opacity: 0; }
+.tile:hover .over, .tile:focus-visible .over { opacity: 1; }
+.tile:focus-visible { outline: 2px solid #357; outline-offset: 1px; }
+@media (max-width: 768px) {
+  .tiles { --w: 44px; --h: 70px; }
+  .tile { display: block !important; padding: 0 !important; line-height: 0 !important; }
+}
+</style>
+</head>
+<body>
+  <p>
+<table>
+  <p>
+<tr>
+<td width="5%">
+&nbsp; &nbsp; &nbsp;
+</td>
+<td width="90%">
+  <p></p>
+<hr>
+<font size="2">
+<center>
+&nbsp; &nbsp; &nbsp;
+<a href="courses.html"
+style="text-decoration: none;" target="new">CR</a>
+<a href="https://www.publicpolicynet.com"
+style="text-decoration: none;" target="new">SPPN</a>
+<a href="https://www.asiapacificppn.org/"
+style="text-decoration: none;" target="new">AP-PPN</a>
+<a href="https://www.indiapublicpolicy.com"
+style="text-decoration: none;" target="new">IPPN</a>
+<a href="https://academic.oup.com/policyandsociety"
+style="text-decoration: none;" target="new">P&amp;S</a>
+<a href="https://www.editorialmanager.com/policyandsociety/default1.aspx"
+style="text-decoration: none;" target="new">1</a>
+    <a href="https://www.editorialmanager.com/policyandsociety/default.aspx" style="text-decoration: none;" target="new">2</a>
+  <a href="https://docs.google.com/document/d/1QMcGBNQvK5b8IR3dI3e0mIJ_8hQICzamAA__cn3CQBw/edit?tab=t.0"
+style="text-decoration: none;" target="new">3</a>
+<a href="http://tandfonline.com/action/showAxaArticles?journalCode=rpdp20"
+style="text-decoration: none;" target="new">PDP</a>
+<a href="https://www.editorialmanager.com/rpdp"
+style="text-decoration: none;" target="new">1</a>
+<a href="https://docs.google.com/document/d/1iTM8qTjbo8QoIMGkvnby1fedFkhBzPCv/edit"
+style="text-decoration: none;" target="new">2</a>
+  <a href="http://www.springer.com/social+sciences/political+science/journal/11077" style="text-decoration: none;" target="new">PS</a>
+<a href="http://www.editorialmanager.com/olic/" style="text-decoration: none;" target="new">1</a>
+<a href="https://editorial.springernature.com/" style="text-decoration: none;" target="new">2</a>
+<a href="https://docs.google.com/document/d/1ZVJifirh1iXyColctVd-dk2IpRvEyyxXSSzCOeMgT2k/edit?tab=t.0" style="text-decoration: none;" target="new">3</a>
+<a href="http://ojs.unbc.ca/index.php/cpsr" style="text-decoration: none;" target="new">CPSR</a>
+<a href="https://www.cppn.ca/" style="text-decoration: none;" target="new">CPPN</a>
+<a href="https://groups.google.com/forum/#!forum/canadianpublicpolicynetwork" style="text-decoration: none;" target="new">1</a>
+<a href="http://www.ippapublicpolicy.org/admin"
+style="text-decoration: none;" target="new">2</a>
+<a href="http://ojs.unbc.ca/index.php/design/index" style="text-decoration: none;" target="new">ARPD</a>
+<a href="https://mc.manuscriptcentral.com/hsselements3" style="text-decoration: none;"
+target="new">CUP</a>
+<a href="https://docs.google.com/document/d/15tM2k7bRLsBDJPaw33foDuW1_cPi5uzhrxO8Qtswq5M/edit?tab=t.0" style="text-decoration: none;"
+target="new">2</a>
+<a href="https://policy.bristoluniversitypress.co.uk/international-library-of-policy-analysis" style="text-decoration: none;"
+target="new">ILPA</a>
+<a href="https://docs.google.com/document/d/1PiPPApoZSDBF8xURfMxDInaO5YnxyvY5S-4dY72L0XQ/edit?tab=t.0" style="text-decoration: none;"
+target="new">2</a>
+<a href="http://www.ecocriticism.ca" style="text-decoration: none;" target="new">JoE</a>
+<a href="http://www.ipsa.org/" style="text-decoration: none;"
+target="new">IPSA</a>
+<a href="http://rc30.ipsa.org/" style="text-decoration: none;" target="new">RC30</a>
+<a href="http://www.ippapublicpolicy.org/" style="text-decoration: none;" target="new">IPPA</a>
+<a href="http://www.bcpsa.ca"
+style="text-decoration: none;" target="new">BCPSA</a> <a
+href="http://www.bcpsa.ca/wp-admin" style="text-decoration: none;"
+target="new">1</a> <a href="http://www.bcpsa.ca/agm"
+style="text-decoration: none;" target="new">2</a> <a
+href="http://spreadsheets.google.com/ccc?key=o00251155450210911032.4168236634381234521"
+style="text-decoration: none;" target="new">3</a> <a
+href="https://www.tandfonline.com/toc/fcpa20/current" style="text-decoration: none;" target="new">JCPA</a>
+<a href="https://mc.manuscriptcentral.com/fcpa"
+style="text-decoration: none;" target="new">1</a> <a href="CV.pdf"
+style="text-decoration: none;" target="new">CV</a>
+<a href="https://www.zotero.org/mi9cal/items" target="new" style="text-decoration: none;">ZT</a>
+<a href="https://www.mendeley.com/library/?desktop=1.19.4-Mac-x64-RestoreResetDialog" target="new" style="text-decoration: none;">ME</a>
+<a href="https://paperpile.com/app" target="new"
+style="text-decoration: none;">PP</a>
+  <a href="https://orcid.org/signin" target="new"
+style="text-decoration: none;">OR</a>
+<a href="https://substack.com/home"
+target="new" style="text-decoration: none;">SS</a>
+<a href="https://publish.buffer.com/all-channels"
+target="new" style="text-decoration: none;">BF</a>
+<a href="https://mastodon.social/home"
+target="new" style="text-decoration: none;">MA</a>
+<a href="https://github.com/howlettm/Mastodon-Policy/blob/main/resources/users.csv"
+target="new" style="text-decoration: none;">1</a>
+<a href="https://howlettm.github.io/Mastodon-Policy/"
+target="new" style="text-decoration: none;">2</a>
+<a href="https://prezi.com/dashboard/next/#/own/all" target="new"
+style="text-decoration: none;">PZ</a>
+<a href="http://policy-design.org/" target="new"
+style="text-decoration: none;">DS</a>
+<a href="https://gamma.app/" target="new" style="text-decoration: none;">GAMMA</a>
+<a href="https://www.mapmywalk.com/dashboard" target="new" style="text-decoration: none;">MP</a>
+<a href="https://www.strava.com/dashboard" target="new" style="text-decoration: none;">STR</a>
+<a href="https://gemini.google.com/app?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=" target="new" style="text-decoration: none;">G3</a>
+<a href="https://notebooklm.google.com/?icid=home_maincta" target="new" style="text-decoration: none;">NBK</a>
+  <a href="https://github.com/howlettm/website" target="new" style="text-decoration: none;">GIT</a>
+   <a href="https://www.sfu.ca/~howlett/" target="new" style="text-decoration: none;">SFU</a>
+  <a href="https://login.yahoo.com/?.src=ym&.intl=sg&.lang=en-SG&.done=http://mail.yahoo.com" target="new" style="text-decoration: none;">YH</a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" style="text-decoration: none;">LI</a>
+<a href="https://twitter.com/"
+target="_blank" style="text-decoration: none;">TW</a>
+<a href="https://www.threads.com/"
+target="new" style="text-decoration: none;">TH</a>
+<a href="https://bsky.app/"
+target="new" style="text-decoration: none;">BS</a>
+  <a href="https://keep.google.com/u/0/"
+target="new" style="text-decoration: none;">GK</a>
+<a href="https://calendar.google.com/calendar/u/0/r/tasks?tab=mc"
+target="new" style="text-decoration: none;">TSK</a>
+<a href="http://groups.google.com" target="new"
+style="text-decoration: none;">GG</a>
+<a href="http://scholar.google.ca/citations?user=f5Sz0fwAAAAJ&hl=en" target="_blank"
+style="text-decoration: none;">SLR</a>
+<a href="https://www.google.com/calendar/render?tab=mc"
+target="_blank" style="text-decoration: none;">GC</a>
+<a href="http://www.gmail.com" target="_blank" style="text-decoration: none;">GM</a>
+  <a href="https://claude.ai/artifact/P8EvfRZN1n3BgwAtfUejG4" target="_blank" style="text-decoration: none;">RC</a>
+</center>
+</font>
+<table>
+<tr>
+  <p>
+<td>
+&nbsp;
+</td>
+<td>
+&nbsp; 
+</td>
+<td>
+<div class="tiles">
+<a class="tile" href="http://www.cnn.com" title="cnn.com"><img class="rest" src="cpe1.jpg" alt="" loading="lazy"><img class="over" src="cnn.gif" alt="cnn.com" loading="lazy"></a>
+<a class="tile" href="https://news.google.com/?hl=en-CA&amp;gl=CA&amp;ceid=CA:en" title="news.google.com"><img class="rest" src="ps1.jpg" alt="" loading="lazy"><img class="over" src="google5.jpg" alt="news.google.com" loading="lazy"></a>
+<a class="tile" href="http://news.bbc.co.uk" title="news.bbc.co.uk"><img class="rest" src="pop1.jpg" alt="" loading="lazy"><img class="over" src="bbc.gif" alt="news.bbc.co.uk" loading="lazy"></a>
+<a class="tile" href="http://www.pbs.org/" title="pbs.org"><img class="rest" src="spp1.gif" alt="" loading="lazy"><img class="over" src="pbs.jpg" alt="pbs.org" loading="lazy"></a>
+<a class="tile" href="http://www.cbc.ca" title="cbc.ca"><img class="rest" src="psc.gif" alt="" loading="lazy"><img class="over" src="cbc.jpg" alt="cbc.ca" loading="lazy"></a>
+<a class="tile" href="https://bc.ctvnews.ca/" title="bc.ctvnews.ca"><img class="rest" src="ubc1.jpg" alt="" loading="lazy"><img class="over" src="ctv.jpg" alt="bc.ctvnews.ca" loading="lazy"></a>
+<a class="tile" href="http://thetyee.ca/" title="thetyee.ca"><img class="rest" src="pop.gif" alt="" loading="lazy"><img class="over" src="tyee.png" alt="thetyee.ca" loading="lazy"></a>
+<a class="tile" href="https://vancouversun.com/category/news/" title="vancouversun.com"><img class="rest" src="tics.gif" alt="" loading="lazy"><img class="over" src="sun.gif" alt="vancouversun.com" loading="lazy"></a>
+<a class="tile" href="https://dailyhive.com/vancouver" title="dailyhive.com"><img class="rest" src="cpe.gif" alt="" loading="lazy"><img class="over" src="hive2.png" alt="dailyhive.com" loading="lazy"></a>
+<a class="tile" href="http://www.ledevoir.com" title="ledevoir.com"><img class="rest" src="prov.jpg" alt="" loading="lazy"><img class="over" src="devoir.gif" alt="ledevoir.com" loading="lazy"></a>
+<a class="tile" href="https://www.lapresse.ca/" title="lapresse.ca"><img class="rest" src="UBC2.jpg" alt="" loading="lazy"><img class="over" src="presse.gif" alt="lapresse.ca" loading="lazy"></a>
+<a class="tile" href="http://www.globeandmail.com/" title="globeandmail.com"><img class="rest" src="uoft.jpg" alt="" loading="lazy"><img class="over" src="globe4.gif" alt="globeandmail.com" loading="lazy"></a>
+<a class="tile" href="https://nationalpost.com/" title="nationalpost.com"><img class="rest" src="SPP.gif" alt="" loading="lazy"><img class="over" src="post.jpg" alt="nationalpost.com" loading="lazy"></a>
+<a class="tile" href="http://www.nytimes.com" title="nytimes.com"><img class="rest" src="rwiv.jpg" alt="" loading="lazy"><img class="over" src="nyt.gif" alt="nytimes.com" loading="lazy"></a>
+<a class="tile" href="http://www.washingtonpost.com/" title="washingtonpost.com"><img class="rest" src="eliadis1.jpg" alt="" loading="lazy"><img class="over" src="post.gif" alt="washingtonpost.com" loading="lazy"></a>
+<a class="tile" href="http://www.guardian.co.uk" title="guardian.co.uk"><img class="rest" src="exec.jpg" alt="" loading="lazy"><img class="over" src="guardian.gif" alt="guardian.co.uk" loading="lazy"></a>
+<a class="tile" href="https://www.bloomberg.com/" title="bloomberg.com"><img class="rest" src="ubc2.jpg" alt="" loading="lazy"><img class="over" src="Bloom.gif" alt="bloomberg.com" loading="lazy"></a>
+<a class="tile" href="https://www.wsj.com/" title="wsj.com"><img class="rest" src="dereg1.JPG" alt="" loading="lazy"><img class="over" src="WSJ.jpg" alt="wsj.com" loading="lazy"></a>
+<a class="tile" href="https://www.forbes.com/" title="forbes.com"><img class="rest" src="PA07.jpg" alt="" loading="lazy"><img class="over" src="forbes.jpeg" alt="forbes.com" loading="lazy"></a>
+<a class="tile" href="http://www.cnbc.com/" title="cnbc.com"><img class="rest" src="emonds.jpg" alt="" loading="lazy"><img class="over" src="CNBC.jpg" alt="cnbc.com" loading="lazy"></a>
+<a class="tile" href="https://www.cbsnews.com/" title="cbsnews.com"><img class="rest" src="rout.jpg" alt="" loading="lazy"><img class="over" src="cbs.gif" alt="cbsnews.com" loading="lazy"></a>
+<a class="tile" href="http://www.freeintertv.com/view/id-2328" title="freeintertv.com"><img class="rest" src="hpr.jpg" alt="" loading="lazy"><img class="over" src="bbctv.jpg" alt="freeintertv.com" loading="lazy"></a>
+<a class="tile" href="https://www.crave.ca/en" title="crave.ca"><img class="rest" src="BCPOL.jpg" alt="" loading="lazy"><img class="over" src="crave.jpg" alt="crave.ca" loading="lazy"></a>
+<a class="tile" href="https://www.primevideo.com/region/na/?ref_=dvm_crs_prm_ca_ra_s_pmp" title="primevideo.com"><img class="rest" src="IPSD.jpg" alt="" loading="lazy"><img class="over" src="prime.png" alt="primevideo.com" loading="lazy"></a>
+<a class="tile" href="https://ww3.primewire.quest/" title="ww3.primewire.quest"><img class="rest" src="mpp.jpg" alt="" loading="lazy"><img class="over" src="channel1.jpg" alt="ww3.primewire.quest" loading="lazy"></a>
+<a class="tile" href="https://mhzchoice.com/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=das_pmax&amp;gad_source=1&amp;gclid=CjwKCAiA3JCvBhA8EiwA4kujZivLu2pZ5yb0_uvOIpVLqWs-AQsSaGB5OWmgRNMFPRdC3btJwNXqRRoC-18QAvD_BwE#trailer&amp;utm_term=&amp;utm_campaign=DAS+-+PMax&amp;utm_source=adwords&amp;utm_medium=ppc&amp;hsa_acc=4709475877&amp;hsa_cam=20959131511&amp;hsa_grp=&amp;hsa_ad=&amp;hsa_src=x&amp;hsa_tgt=&amp;hsa_kw=&amp;hsa_mt=&amp;hsa_net=adwords&amp;hsa_ver=3" title="mhzchoice.com"><img class="rest" src="DPP.jpg" alt="" loading="lazy"><img class="over" src="mhz.png" alt="mhzchoice.com" loading="lazy"></a>
+<a class="tile" href="http://movies.netflix.com/WiHome" title="movies.netflix.com"><img class="rest" src="agrifood1.jpg" alt="" loading="lazy"><img class="over" src="netflix.jpg" alt="movies.netflix.com" loading="lazy"></a>
+<a class="tile" href="https://music.amazon.ca/?webplayerDetailPagePath=https%3A%2F%2Fmusic.amazon.ca&amp;hasSeenMusicAuthPage=true&amp;referer=https%3A%2F%2Fmusic.amazon.com%2F" title="music.amazon.ca"><img class="rest" src="HBK.jpg" alt="" loading="lazy"><img class="over" src="Music.png" alt="music.amazon.ca" loading="lazy"></a>
+<a class="tile" href="https://music.youtube.com/" title="music.youtube.com"><img class="rest" src="Oilsands.gif" alt="" loading="lazy"><img class="over" src="Music2.png" alt="music.youtube.com" loading="lazy"></a>
+<a class="tile" href="https://sportsurge.net/" title="sportsurge.net"><img class="rest" src="CPPutp.jpg" alt="" loading="lazy"><img class="over" src="sportsurge.png" alt="sportsurge.net" loading="lazy"></a>
+<a class="tile" href="https://streamseast.is/soccer" title="streamseast.is"><img class="rest" src="palgrave3.jpg" alt="" loading="lazy"><img class="over" src="streameast.png" alt="streamseast.is" loading="lazy"></a>
+<a class="tile" href="https://movies4uhd.net/" title="movies4uhd.net"><img class="rest" src="palgrave4.jpg" alt="" loading="lazy"><img class="over" src="movie4u.jpg" alt="movies4uhd.net" loading="lazy"></a>
+<a class="tile" href="https://swatchseries.cx/" title="swatchseries.cx"><img class="rest" src="PWC.jpg" alt="" loading="lazy"><img class="over" src="tv.jpg" alt="swatchseries.cx" loading="lazy"></a>
+<a class="tile" href="https://en.fmovies24.watch/" title="en.fmovies24.watch"><img class="rest" src="PF.jpg" alt="" loading="lazy"><img class="over" src="FM.jpg" alt="en.fmovies24.watch" loading="lazy"></a>
+<a class="tile" href="https://watchseriestv.co/" title="watchseriestv.co"><img class="rest" src="CPA.jpg" alt="" loading="lazy"><img class="over" src="1234.jpg" alt="watchseriestv.co" loading="lazy"></a>
+<a class="tile" href="https://www.dailymotion.com/ca" title="dailymotion.com"><img class="rest" src="palgrave.jpg" alt="" loading="lazy"><img class="over" src="daily.png" alt="dailymotion.com" loading="lazy"></a>
+<a class="tile" href="https://tubitv.com/home" title="tubitv.com"><img class="rest" src="primer2.jpg" alt="" loading="lazy"><img class="over" src="tubi.jpg" alt="tubitv.com" loading="lazy"></a>
+<a class="tile" href="https://www.apple.com/ca/apple-tv-plus/" title="apple.com"><img class="rest" src="Elements.jpg" alt="" loading="lazy"><img class="over" src="AppleTV.png" alt="apple.com" loading="lazy"></a>
+<a class="tile" href="https://thebulwark.com/" title="thebulwark.com"><img class="rest" src="ILPAC1.jpg" alt="" loading="lazy"><img class="over" src="bulwark.jpg" alt="thebulwark.com" loading="lazy"></a>
+<a class="tile" href="https://www.latimes.com/" title="latimes.com"><img class="rest" src="design.jpg" alt="" loading="lazy"><img class="over" src="latimes.gif" alt="latimes.com" loading="lazy"></a>
+<a class="tile" href="http://www.thedailybeast.com/" title="thedailybeast.com"><img class="rest" src="DPPII.jpg" alt="" loading="lazy"><img class="over" src="dbeast.jpg" alt="thedailybeast.com" loading="lazy"></a>
+<a class="tile" href="http://www.vanityfair.com/" title="vanityfair.com"><img class="rest" src="styles1.jpg" alt="" loading="lazy"><img class="over" src="fair.jpg" alt="vanityfair.com" loading="lazy"></a>
+<a class="tile" href="http://www.politico.com/" title="politico.com"><img class="rest" src="mechanisms.jpg" alt="" loading="lazy"><img class="over" src="Politico.jpg" alt="politico.com" loading="lazy"></a>
+<a class="tile" href="http://www.vox.com/" title="vox.com"><img class="rest" src="DPP2Primer.jpg" alt="" loading="lazy"><img class="over" src="vox.png" alt="vox.com" loading="lazy"></a>
+<a class="tile" href="http://thehill.com/" title="thehill.com"><img class="rest" src="kekez.jpg" alt="" loading="lazy"><img class="over" src="hill.png" alt="thehill.com" loading="lazy"></a>
+<a class="tile" href="https://www.theverge.com/" title="theverge.com"><img class="rest" src="cup5.jpg" alt="" loading="lazy"><img class="over" src="verge.jpg" alt="theverge.com" loading="lazy"></a>
+<a class="tile" href="https://thegrayzone.com/" title="thegrayzone.com"><img class="rest" src="spp4.jpg" alt="" loading="lazy"><img class="over" src="gz.png" alt="thegrayzone.com" loading="lazy"></a>
+<a class="tile" href="https://www.chinafile.com/" title="chinafile.com"><img class="rest" src="Guide.jpg" alt="" loading="lazy"><img class="over" src="china.png" alt="chinafile.com" loading="lazy"></a>
+<a class="tile" href="https://www.alternet.org/" title="alternet.org"><img class="rest" src="style.jpg" alt="" loading="lazy"><img class="over" src="alternet.png" alt="alternet.org" loading="lazy"></a>
+<a class="tile" href="https://theintercept.com" title="theintercept.com"><img class="rest" src="success1.jpg" alt="" loading="lazy"><img class="over" src="in.png" alt="theintercept.com" loading="lazy"></a>
+<a class="tile" href="https://nymag.com/" title="nymag.com"><img class="rest" src="dict2.jpg" alt="" loading="lazy"><img class="over" src="nym.jpg" alt="nymag.com" loading="lazy"></a>
+<a class="tile" href="https://www.nytimes.com/section/magazine" title="nytimes.com"><img class="rest" src="tools2.jpg" alt="" loading="lazy"><img class="over" src="nytm.jpg" alt="nytimes.com" loading="lazy"></a>
+<a class="tile" href="http://www.freeintertv.com/view/id-262" title="freeintertv.com"><img class="rest" src="palgrave2.jpg" alt="" loading="lazy"><img class="over" src="sky4.jpg" alt="freeintertv.com" loading="lazy"></a>
+<a class="tile" href="http://www.freeintertv.com/view/id-1524" title="freeintertv.com"><img class="rest" src="dpp3.png" alt="" loading="lazy"><img class="over" src="bbc4.jpg" alt="freeintertv.com" loading="lazy"></a>
+<a class="tile" href="https://www.barrons.com/" title="barrons.com"><img class="rest" src="cup4.jpg" alt="" loading="lazy"><img class="over" src="Barrons.png" alt="barrons.com" loading="lazy"></a>
+<a class="tile" href="https://www.hilltimes.com/" title="hilltimes.com"><img class="rest" src="PA.jpg" alt="" loading="lazy"><img class="over" src="thehill.jpg" alt="hilltimes.com" loading="lazy"></a>
+<a class="tile" href="https://www.projectfreetvm.lol/" title="projectfreetvm.lol"><img class="rest" src="PAS.jpg" alt="" loading="lazy"><img class="over" src="freetv.jpg" alt="projectfreetvm.lol" loading="lazy"></a>
+<a class="tile" href="https://watch.plex.tv/en-GB" title="watch.plex.tv"><img class="rest" src="Dict.jpg" alt="" loading="lazy"><img class="over" src="wftv.jpg" alt="watch.plex.tv" loading="lazy"></a>
+<a class="tile" href="https://solarmoviesz.co/" title="solarmoviesz.co"><img class="rest" src="SPP5.jpg" alt="" loading="lazy"><img class="over" src="solar.jpg" alt="solarmoviesz.co" loading="lazy"></a>
+<a class="tile" href="https://ymovies.info/" title="ymovies.info"><img class="rest" src="pivot.png" alt="" loading="lazy"><img class="over" src="upmovie.jpg" alt="ymovies.info" loading="lazy"></a>
+<a class="tile" href="https://ww2.yesmovies.ag/" title="ww2.yesmovies.ag"><img class="rest" src="palgrave2.jpg" alt="" loading="lazy"><img class="over" src="yes.png" alt="ww2.yesmovies.ag" loading="lazy"></a>
+<a class="tile" href="https://cooking.nytimes.com/" title="cooking.nytimes.com"><img class="rest" src="palgrave2.jpg" alt="" loading="lazy"><img class="over" src="cook.png" alt="cooking.nytimes.com" loading="lazy"></a>
+<a class="tile" href="https://claude.ai/artifact/P8EvfRZN1n3BgwAtfUejG4" title="claude.ai"><img class="rest" src="cup4.jpg" alt="" loading="lazy"><img class="over" src="mike.png" alt="claude.ai" loading="lazy"></a>
+<a class="tile" href="https://www.fiveroses.ca/en/recipes" title="fiveroses.ca"><img class="rest" src="primer2.jpg" alt="" loading="lazy"><img class="over" src="cook3.jpg" alt="fiveroses.ca" loading="lazy"></a>
+<a class="tile" href="https://bstsrs.in/browse-shows" title="bstsrs.in"><img class="rest" src="PB.jpg" alt="" loading="lazy"><img class="over" src="bestseries.jpg" alt="bstsrs.in" loading="lazy"></a>
+<a class="tile" href="https://www.theatlantic.com/" title="theatlantic.com"><img class="rest" src="Guide.jpg" alt="" loading="lazy"><img class="over" src="atlantic.jpeg" alt="theatlantic.com" loading="lazy"></a>
+<a class="tile" href="https://anneapplebaum.substack.com/" title="anneapplebaum.substack.com"><img class="rest" src="Guide.jpg" alt="" loading="lazy"><img class="over" src="anne.jpg" alt="anneapplebaum.substack.com" loading="lazy"></a>
+<a class="tile" href="https://www.newyorker.com/" title="newyorker.com"><img class="rest" src="polcan.jpg" alt="" loading="lazy"><img class="over" src="newyorker1.jpg" alt="newyorker.com" loading="lazy"></a>
+<a class="tile" href="https://www.nybooks.com/" title="nybooks.com"><img class="rest" src="bcpsa.jpg" alt="" loading="lazy"><img class="over" src="nyrb.jpg" alt="nybooks.com" loading="lazy"></a>
+<a class="tile" href="https://www.the-tls.co.uk/" title="the-tls.co.uk"><img class="rest" src="canpol.png" alt="" loading="lazy"><img class="over" src="tls.png" alt="the-tls.co.uk" loading="lazy"></a>
+<a class="tile" href="http://news.cnet.com/" title="news.cnet.com"><img class="rest" src="ippa5.jpg" alt="" loading="lazy"><img class="over" src="cnet.jpg" alt="news.cnet.com" loading="lazy"></a>
+<a class="tile" href="http://www.macrumors.com/" title="macrumors.com"><img class="rest" src="ipsa5.png" alt="" loading="lazy"><img class="over" src="mac1.jpg" alt="macrumors.com" loading="lazy"></a>
+<a class="tile" href="http://www.zdnet.com/" title="zdnet.com"><img class="rest" src="APPPN.png" alt="" loading="lazy"><img class="over" src="zdnet.gif" alt="zdnet.com" loading="lazy"></a>
+<a class="tile" href="http://www.digitaltrends.com/computing/" title="digitaltrends.com"><img class="rest" src="SPPN.png" alt="" loading="lazy"><img class="over" src="dt.jpg" alt="digitaltrends.com" loading="lazy"></a>
+<a class="tile" href="http://www.phonearena.com/" title="phonearena.com"><img class="rest" src="ippn1.png" alt="" loading="lazy"><img class="over" src="phone.jpg" alt="phonearena.com" loading="lazy"></a>
+<a class="tile" href="http://www.gsmarena.com/news.php3" title="gsmarena.com"><img class="rest" src="CPPN.png" alt="" loading="lazy"><img class="over" src="gsm1.jpg" alt="gsmarena.com" loading="lazy"></a>
+<a class="tile" href="https://forum.xda-developers.com/poco-f1" title="forum.xda-developers.com"><img class="rest" src="pppn2.png" alt="" loading="lazy"><img class="over" src="xda.png" alt="forum.xda-developers.com" loading="lazy"></a>
+<a class="tile" href="http://gizmodo.com" title="gizmodo.com"><img class="rest" src="arpd1.png" alt="" loading="lazy"><img class="over" src="gizmodo.jpeg" alt="gizmodo.com" loading="lazy"></a>
+<a class="tile" href="http://www.androidcentral.com/" title="androidcentral.com"><img class="rest" src="pdp.jpg" alt="" loading="lazy"><img class="over" src="android.jpeg" alt="androidcentral.com" loading="lazy"></a>
+<a class="tile" href="http://bgr.com/" title="bgr.com"><img class="rest" src="jcpa.jpg" alt="" loading="lazy"><img class="over" src="bgr.jpeg" alt="bgr.com" loading="lazy"></a>
+<a class="tile" href="https://paulkrugman.substack.com/" title="paulkrugman.substack.com"><img class="rest" src="encounters.jpg" alt="" loading="lazy"><img class="over" src="substack.jpg" alt="paulkrugman.substack.com" loading="lazy"></a>
+<a class="tile" href="http://www.wired.com/" title="wired.com"><img class="rest" src="WPSR1.jpg" alt="" loading="lazy"><img class="over" src="wired.jpg" alt="wired.com" loading="lazy"></a>
+<a class="tile" href="http://www.techradar.com/" title="techradar.com"><img class="rest" src="cpsr.jpg" alt="" loading="lazy"><img class="over" src="tech.jpg" alt="techradar.com" loading="lazy"></a>
+<a class="tile" href="http://www.engadget.com/" title="engadget.com"><img class="rest" src="cjps.jpg" alt="" loading="lazy"><img class="over" src="engadget.jpeg" alt="engadget.com" loading="lazy"></a>
+<a class="tile" href="http://foreignpolicy.com/" title="foreignpolicy.com"><img class="rest" src="PandS.jpg" alt="" loading="lazy"><img class="over" src="FP.png" alt="foreignpolicy.com" loading="lazy"></a>
+<a class="tile" href="http://time.com/" title="time.com"><img class="rest" src="ps10.jpg" alt="" loading="lazy"><img class="over" src="time.png" alt="time.com" loading="lazy"></a>
+<a class="tile" href="http://www.salon.com/" title="salon.com"><img class="rest" src="arpd.png" alt="" loading="lazy"><img class="over" src="salon.png" alt="salon.com" loading="lazy"></a>
+<a class="tile" href="http://www.thenews.mx/mexico/" title="thenews.mx"><img class="rest" src="psj.jpg" alt="" loading="lazy"><img class="over" src="News.jpg" alt="thenews.mx" loading="lazy"></a>
+<a class="tile" href="https://www.straitstimes.com/singapore" title="straitstimes.com"><img class="rest" src="cpa.jpg" alt="" loading="lazy"><img class="over" src="ST.jpg" alt="straitstimes.com" loading="lazy"></a>
+<a class="tile" href="http://www.nationaljournal.com/" title="nationaljournal.com"><img class="rest" src="slgr.jpg" alt="" loading="lazy"><img class="over" src="NJ1.jpg" alt="nationaljournal.com" loading="lazy"></a>
+<a class="tile" href="http://www.huffingtonpost.com/" title="huffingtonpost.com"><img class="rest" src="jpp.jpg" alt="" loading="lazy"><img class="over" src="huff.jpg" alt="huffingtonpost.com" loading="lazy"></a>
+<a class="tile" href="http://www.realclearpolitics.com/?state=nwa" title="realclearpolitics.com"><img class="rest" src="bcstudies.jpg" alt="" loading="lazy"><img class="over" src="rcp.jpg" alt="realclearpolitics.com" loading="lazy"></a>
+<a class="tile" href="http://www.iraqinews.com/tag/isis-islamic-state-iraq-syria/" title="iraqinews.com"><img class="rest" src="policysciences.jpg" alt="" loading="lazy"><img class="over" src="iraq.jpg" alt="iraqinews.com" loading="lazy"></a>
+<a class="tile" href="http://www.thenation.com/" title="thenation.com"><img class="rest" src="par.jpg" alt="" loading="lazy"><img class="over" src="Nation.jpg" alt="thenation.com" loading="lazy"></a>
+<a class="tile" href="http://www.ft.com/home/asia" title="ft.com"><img class="rest" src="FPE.gif" alt="" loading="lazy"><img class="over" src="FT.jpeg" alt="ft.com" loading="lazy"></a>
+<a class="tile" href="https://www.theaustralian.com.au/" title="theaustralian.com.au"><img class="rest" src="irpa.gif" alt="" loading="lazy"><img class="over" src="aus3.jpeg" alt="theaustralian.com.au" loading="lazy"></a>
+<a class="tile" href="http://www.liberation.fr/" title="liberation.fr"><img class="rest" src="jnrpr.jpg" alt="" loading="lazy"><img class="over" src="lib.jpg" alt="liberation.fr" loading="lazy"></a>
+<a class="tile" href="http://www.lemonde.fr/" title="lemonde.fr"><img class="rest" src="japp.jpg" alt="" loading="lazy"><img class="over" src="monde.gif" alt="lemonde.fr" loading="lazy"></a>
+<a class="tile" href="http://timesofindia.indiatimes.com/international-home" title="timesofindia.indiatimes.com"><img class="rest" src="rivista.gif" alt="" loading="lazy"><img class="over" src="india.png" alt="timesofindia.indiatimes.com" loading="lazy"></a>
+<a class="tile" href="http://www.understandingwar.org/" title="understandingwar.org"><img class="rest" src="erss.gif" alt="" loading="lazy"><img class="over" src="isw.png" alt="understandingwar.org" loading="lazy"></a>
+<a class="tile" href="http://talkingpointsmemo.com" title="talkingpointsmemo.com"><img class="rest" src="jepp.jpg" alt="" loading="lazy"><img class="over" src="tpm.png" alt="talkingpointsmemo.com" loading="lazy"></a>
+<a class="tile" href="http://www.cjr.org/" title="cjr.org"><img class="rest" src="jipd.png" alt="" loading="lazy"><img class="over" src="cjr.jpg" alt="cjr.org" loading="lazy"></a>
+<a class="tile" href="http://www.mg.co.za" title="mg.co.za"><img class="rest" src="EPA.jpg" alt="" loading="lazy"><img class="over" src="mg.jpg" alt="mg.co.za" loading="lazy"></a>
+<a class="tile" href="https://www.foreignaffairs.com/" title="foreignaffairs.com"><img class="rest" src="irpp.jpg" alt="" loading="lazy"><img class="over" src="FA.jpg" alt="foreignaffairs.com" loading="lazy"></a>
+<a class="tile" href="https://www.msnbc.com/" title="msnbc.com"><img class="rest" src="cpar.png" alt="" loading="lazy"><img class="over" src="msnbc.gif" alt="msnbc.com" loading="lazy"></a>
+<a class="tile" href="https://slate.com/" title="slate.com"><img class="rest" src="ppmg.png" alt="" loading="lazy"><img class="over" src="slate.png" alt="slate.com" loading="lazy"></a>
+<a class="tile" href="https://fortune.com/section/magazine/" title="fortune.com"><img class="rest" src="cpj.jpg" alt="" loading="lazy"><img class="over" src="fortune.jpg" alt="fortune.com" loading="lazy"></a>
+<a class="tile" href="https://www.spiegel.de/international/world/" title="spiegel.de"><img class="rest" src="utp5.jpg" alt="" loading="lazy"><img class="over" src="spiegel.png" alt="spiegel.de" loading="lazy"></a>
+<a class="tile" href="http://motherjones.com/" title="motherjones.com"><img class="rest" src="ILPAC1.jpg" alt="" loading="lazy"><img class="over" src="motherjones.jpg" alt="motherjones.com" loading="lazy"></a>
+<a class="tile" href="http://qz.com/" title="qz.com"><img class="rest" src="CUP1.jpg" alt="" loading="lazy"><img class="over" src="qz.png" alt="qz.com" loading="lazy"></a>
+<a class="tile" href="http://www.hilltimes.com/" title="hilltimes.com"><img class="rest" src="ShowJacket.jpeg" alt="" loading="lazy"><img class="over" src="Hill.png" alt="hilltimes.com" loading="lazy"></a>
+<a class="tile" href="http://www.aljazeera.com/" title="aljazeera.com"><img class="rest" src="ppg.gif" alt="" loading="lazy"><img class="over" src="jazeera.gif" alt="aljazeera.com" loading="lazy"></a>
+<a class="tile" href="http://fivethirtyeight.com/contributors/nate-silver/" title="fivethirtyeight.com"><img class="rest" src="rowman.jpg" alt="" loading="lazy"><img class="over" src="538.jpg" alt="fivethirtyeight.com" loading="lazy"></a>
+<a class="tile" href="https://www.rollcall.com/" title="rollcall.com"><img class="rest" src="alberto.jpg" alt="" loading="lazy"><img class="over" src="cq.jpg" alt="rollcall.com" loading="lazy"></a>
+<a class="tile" href="http://blog.dilbert.com/post/126589300371/clown-genius" title="blog.dilbert.com"><img class="rest" src="elements.png" alt="" loading="lazy"><img class="over" src="dilbert.jpg" alt="blog.dilbert.com" loading="lazy"></a>
+<a class="tile" href="http://www.newsmax.com/" title="newsmax.com"><img class="rest" src="Energy.jpg" alt="" loading="lazy"><img class="over" src="newsmax.gif" alt="newsmax.com" loading="lazy"></a>
+<a class="tile" href="http://www.brookings.edu/" title="brookings.edu"><img class="rest" src="abbott.jpg" alt="" loading="lazy"><img class="over" src="Brookings.png" alt="brookings.edu" loading="lazy"></a>
+<a class="tile" href="http://www.prospectmagazine.co.uk/" title="prospectmagazine.co.uk"><img class="rest" src="concordia.jpg" alt="" loading="lazy"><img class="over" src="prospect.jpg" alt="prospectmagazine.co.uk" loading="lazy"></a>
+<a class="tile" href="http://www.vice.com/en_us" title="vice.com"><img class="rest" src="ottawa.jpg" alt="" loading="lazy"><img class="over" src="vice.jpg" alt="vice.com" loading="lazy"></a>
+<a class="tile" href="http://www.breitbart.com/big-government/" title="breitbart.com"><img class="rest" src="ubc.jpg" alt="" loading="lazy"><img class="over" src="breitbart.jpg" alt="breitbart.com" loading="lazy"></a>
+<a class="tile" href="http://www.rollingstone.com/politics" title="rollingstone.com"><img class="rest" src="queens.jpeg" alt="" loading="lazy"><img class="over" src="rolling.jpeg" alt="rollingstone.com" loading="lazy"></a>
+<a class="tile" href="http://www.theatlantic.com/" title="theatlantic.com"><img class="rest" src="uvic.jpeg" alt="" loading="lazy"><img class="over" src="atlantic.jpeg" alt="theatlantic.com" loading="lazy"></a>
+<a class="tile" href="http://harpers.org/" title="harpers.org"><img class="rest" src="sfu.jpeg" alt="" loading="lazy"><img class="over" src="harpers.jpeg" alt="harpers.org" loading="lazy"></a>
+<a class="tile" href="http://www.economist.com/" title="economist.com"><img class="rest" src="nus.jpeg" alt="" loading="lazy"><img class="over" src="economist.jpeg" alt="economist.com" loading="lazy"></a>
+<a class="tile" href="http://www.foxnews.com" title="foxnews.com"><img class="rest" src="cagliari.jpeg" alt="" loading="lazy"><img class="over" src="Fox.jpg" alt="foxnews.com" loading="lazy"></a>
+<a class="tile" href="https://www.rt.com/on-air/" title="rt.com"><img class="rest" src="HKUST.png" alt="" loading="lazy"><img class="over" src="rt.png" alt="rt.com" loading="lazy"></a>
+<a class="tile" href="https://globalnews.ca/live/bc/" title="globalnews.ca"><img class="rest" src="LMU.png" alt="" loading="lazy"><img class="over" src="global.jpg" alt="globalnews.ca" loading="lazy"></a>
+<a class="tile" href="https://news.sky.com/watch-live" title="news.sky.com"><img class="rest" src="RG1.png" alt="" loading="lazy"><img class="over" src="sky.png" alt="news.sky.com" loading="lazy"></a>
+<a class="tile" href="https://www.rte.ie/news/" title="rte.ie"><img class="rest" src="AE3.png" alt="" loading="lazy"><img class="over" src="rte.jpg" alt="rte.ie" loading="lazy"></a>
+<a class="tile" href="https://www.tvnz.co.nz/one-news" title="tvnz.co.nz"><img class="rest" src="M.jpg" alt="" loading="lazy"><img class="over" src="tvnz.png" alt="tvnz.co.nz" loading="lazy"></a>
+<a class="tile" href="https://www.abc.net.au/news/" title="abc.net.au"><img class="rest" src="Z1.jpg" alt="" loading="lazy"><img class="over" src="abc2.png" alt="abc.net.au" loading="lazy"></a>
+<a class="tile" href="https://www.youtube.com/watch?v=WisZM9CMlTo" title="youtube.com"><img class="rest" src="cos.jpg" alt="" loading="lazy"><img class="over" src="aljazeera2.png" alt="youtube.com" loading="lazy"></a>
+<a class="tile" href="https://www.cgtn.com/tv" title="cgtn.com"><img class="rest" src="kudos.png" alt="" loading="lazy"><img class="over" src="cgtn.png" alt="cgtn.com" loading="lazy"></a>
+<a class="tile" href="https://www.nbcnews.com/" title="nbcnews.com"><img class="rest" src="micro2.jpg" alt="" loading="lazy"><img class="over" src="nbc2.png" alt="nbcnews.com" loading="lazy"></a>
+<a class="tile" href="https://www.usatoday.com/" title="usatoday.com"><img class="rest" src="orcid.jpg" alt="" loading="lazy"><img class="over" src="usatoday.jpg" alt="usatoday.com" loading="lazy"></a>
+<a class="tile" href="https://streema.com/tv/" title="streema.com"><img class="rest" src="scopus1.png" alt="" loading="lazy"><img class="over" src="streema.png" alt="streema.com" loading="lazy"></a>
+<a class="tile" href="https://www.tvokids.com/preschool" title="tvokids.com"><img class="rest" src="scholar1.png" alt="" loading="lazy"><img class="over" src="wwitv.jpg" alt="tvokids.com" loading="lazy"></a>
+<a class="tile" href="http://www.the-peak.ca/" title="the-peak.ca"><img class="rest" src="pri.jpg" alt="" loading="lazy"><img class="over" src="peak.jpg" alt="the-peak.ca" loading="lazy"></a>
+</div>
+</td>
+</tr>
+</table>
+<table cellspacing="25" cellpadding="8" style="border-collapse: collapse;">
+<tr>
+<td>
+&nbsp; &nbsp; &nbsp;
+</td>
+<td align="justify" width="86%">
+<font size="4"><b><a href="http://www.sfu.ca/politics/people/profiles/howlett.html" style="text-decoration: none;" target="new">Michael
+Howlett, FRSC</a></b></font>
+<font size="2"> (Professor)
+BSocSci.(Hon)(Ott), MA(Br Col), PhD (Queen's) is <a
+href="http://www.academicrelations.sfu.ca/ResearchChairs.html"
+style="text-decoration: none;" target="new">Burnaby Mountain Professor</a>
+and former <a href="http://www.chairs-chaires.gc.ca/home-accueil-eng.aspx"
+style="text-decoration: none;" target="new">
+Canada Research Chair (Tier 1)</a>
+in the Department of Political Science at Simon Fraser
+University and Visiting Fellow at <a href="https://www.ln.edu.hk" style="text-decoration: none;" target="new">Lingnan University</a> in Hong Kong.
+He specializes in public
+policy analysis, political economy, and resource and environmental
+policy. Professor Howlett taught at <a href="http://www.queensu.ca/" style="text-decoration: none;" target="new">Queen's University</a> (1986-1988) and the
+<a href="http://www.uvic.ca/" style="text-decoration: none;" target="new">University of Victoria</a> (1988-1989) before coming to SFU. He was Visiting Professor (2009-2010) and Yong Pung How Chair Professor (2013-2017) at the
+<a href="http://lkyspp.nus.edu.sg" style="text-decoration: none;" target="new">
+Lee Kuan Yew School of Public Policy at the National University of Singapore</a>,
+Visiting Professor at the <a href="http://www.unica.it/pub/english/" style="text-decoration: none;" target="new">Universita degli studi di Cagliari</a> (2012),
+Visiting Research Fellow at the <a href="http://ppol.ust.hk/" style="text-decoration: none;" target="new" onmouseover="window.status='HKUST'; return true" onmouseout="window.status=''; return true;">
+Hong Kong University of Science and Technology</a> (2018)
+and Visiting Researcher at the Centre for Advanced Studies of the <a href="https://www.en.uni-muenchen.de/about_lmu/index.html" style="text-decoration: none;" target="new" onmouseover="window.status='LMU'; return true"
+onmouseout="window.status=''; return true;">Ludwig-Maximilians-Universitat Munchen</a> (2020).
+He is the author of
+<a href="http://www.amazon.ca/Canadian-Public-Policy-Process-Style/dp/1442644060" style="text-decoration: none;" target="new" onmouseover="window.status='Canadian Public Policy';
+return true" onmouseout="window.status='';return true;">Canadian Public Policy </a> (2013);
+<a href="https://www.amazon.ca/Designing-Public-Policies-Principles-Instruments-dp-1032380861/dp/1032380861/ref=dp_ob_title_bk"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Designing Public Policies'; return true"
+onmouseout="window.status='';return true;"> Designing Public Policies </a>
+(2011, 2019, 2024),
+<a href="https://www.routledge.com/The-Policy-Design-Primer-Choosing-the-Right-Tools-for-the-Job/Howlett/p/book/9780367001650"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Policy Design Primer'; return true"
+onmouseout="window.status='';return true;"> The Policy Design Primer (2019) </a>
+and co-author of
+  <a href="https://link.springer.com/book/10.1007/978-3-032-28953-7"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Politics of Detail'; return true"
+onmouseout="window.status=''; return true;">The Politics of Detail;
+</a> (2026),
+<a href="https://www.e-elgar.com/shop/usd/dictionary-of-policy-design-9781803927015.html?srsltid=AfmBOor_VaxuAaI-qG-ZZagy7LNYBr9iJ7ldsxtp1_b9X1sC5a2Ef_ri"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Dictionary of Policy Design'; return true"
+onmouseout="window.status=''; return true;">Dictionary of Policy Design;
+</a> (2025),
+<a href="https://www.cambridge.org/core/elements/bad-public-policy/243B9A67362A16D36D4CCB99A7572734"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Bad Policy'; return true"
+onmouseout="window.status=''; return true;">Bad Policy;
+</a> (2025),
+<a href="https://www.palgrave.com/gp/politics-and-international-studies" style="text-decoration: none;" target="new"
+onmouseover="window.status='Politics of Procurement'; return true"
+onmouseout="window.status=''; return true;">Procurement and Politics;
+</a> (2023),
+<a href="https://www.e-elgar.com/shop/usd/dictionary-of-public-policy-9781800374782.html" style="text-decoration: none;" target="new"
+onmouseover="window.status='Dictionary of Public Policy'; return true"
+onmouseout="window.status=''; return true;">Dictionary of Public Policy;
+</a> (2022),
+<a href="https://www.cambridge.org/ca/academic/subjects/politics-international-relations/comparative-politics/policy-consultancy-comparative-perspective-patterns-nuances-and-implications-contractor-state?format=HB"
+style="text-decoration: none;" target="new" onmouseover="window.status='Policy Consultancy in Comparative Perspective'; return true" onmouseout="window.status=''; return true;">
+Policy Consultancy in Comparative Perspective;
+</a> (2020),
+<a href="https://www.cambridge.org/core/elements/designing-for-policy-effectiveness/4AAF295069C78389EC25D409A1BE88B3"
+style="text-decoration: none;" target="new" onmouseover="window.status='Designing for Policy Effectiveness: Defining and Understanding a Concept'; return true" onmouseout="window.status=''; return true;">Designing for Policy Effectiveness:
+Defining and Understanding a Concept;
+</a> (2018)
+<a href="https://era.library.ualberta.ca/public/view/item/uuid:cb58c502-b16e-4592-b700-b3253633f555"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Application of Federal Legislation to Alberta\'s Mineable Oil Sands'; return true"
+onmouseout="window.status='';return true;">
+Application of Federal Legislation to Alberta's Mineable Oil Sands
+</a> (2013),
+<a href="https://www.amazon.ca/Public-Policy-Primer-Managing-Process/dp/0415780470"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Public Policy Primer'; return true"
+onmouseout="window.status='';return true;">
+The Public Policy Primer </a> (2010 and 2018), <a
+href="http://www.unep.ch/etb/publications/IPSD%20manual/UNEP%20IPSD%20final.pdf"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Integrated Policymaking for Sustainability'; return true"
+onmouseout="window.status='';return true;"> Integrated Policymaking
+for Sustainable Development </a> (2009), <a
+href="https://www.cambridge.org/highereducation/books/studying-public-policy/E9DCD610E942F8C1369D9954A14D488C#overview"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Studying Public Policy: Policy Cycles and Policy Subsystems'; return true"
+onmouseout="window.status='';return true;"> Studying Public Policy</a>
+(2026, 2020, 2009, 2003 &amp; 1995), <a
+href="https://www.ubcpress.ca/in-search-of-sustainability"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='In Search of Sustainability: British Columbia Forest Policy in the 1990s'; return true"
+onmouseout="window.status='';return true;"> In Search of
+Sustainability </a> (2001), <a
+href="http://www.oupcanada.com/catalog/9780195413489.html"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Political Economy of Canada: An Introduction'; return true"
+onmouseout="window.status='';return true;"> The Political Economy of
+Canada</a> (1999 &amp; 1992) and <a
+href="http://www.ubcpress.ca/canadian-natural-resource-and-environmental-policy-2nd-ed"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Canadian Natural Resource and Environmental Policy: Political Economy and Public Policy'; return true"
+onmouseout="window.status='';return true;"> Canadian Natural Resource
+and Environmental Policy</a> (1997 &amp; 2005).
+He has edited
+<a href="http://www.amazon.ca/Canadian-Forest-Policy-Adapting-Change/dp/0802043518"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Canadian Forest Policy: Adapting to Change'; return true"
+onmouseout="window.status='';return true;"> Canadian Forest Policy</a>
+(2001) and
+<a href="https://www.routledge.com/The-Routledge-Handbook-of-Policy-Tools/Howlett/p/book/9780367757748#:~:text=The%20Routledge%20Handbook%20of%20Policy%20Tools%20is%20essential%20reading%20and,the%20use%20of%20policy%20tools"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Routledge Handbook of Policy Tools'; return true"
+onmouseout="window.status='';return true;"> Routledge Handbook of Policy Tools</a>
+(2022) and co-edited
+<a href="https://www.e-elgar.com/shop/usd/handbook-of-policy-advice-9781035318070.html"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Handbook of Policy Advice'; return true"
+onmouseout="window.status=''; return true;">Handbook of Policy Advice;
+</a> (2025),
+<a href="https://www.routledge.com/The-Routledge-Handbook-of-Policy-Advisory-Systems/Capano-Craft-Howlett/p/book/9781032737454?srsltid=AfmBOoo26gXncssCTUF8d7Z6xFWy3JebGz1I9qoox90jfY__dEv55CwL"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Handbook of Policy Advisory Systems'; return true"
+onmouseout="window.status=''; return true;">Handbook of Policy Advisory Systems;
+</a> (2025),
+<a href="https://global.oup.com/academic/product/policy-success-in-canada-9780192897046?facet_narrowbypubdate_facet=Next%203%20months&lang=en&cc=az"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Success in Canada'; return true"
+onmouseout="window.status='';return true;">Policy Success in Canada</a>
+(2022);
+<a href="https://www.routledge.com/The-Routledge-Handbook-of-Policy-Styles/Howlett-Tosun/p/book/9780367251437"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Routledge Handbook of Policy Styles'; return true"
+onmouseout="window.status='';return true;">Routledge Handbook of Policy Styles</a>
+(2021);
+<a href="https://www.e-elgar.com/shop/gbp/a-modern-guide-to-public-policy-9781789904970.html" style="text-decoration: none;" target="new"
+onmouseover="window.status='Modern Guide to Public Policy'; return true"
+onmouseout="window.status='';return true;">A Modern Guide to Public Policy</a>
+(2020);
+<a href="https://www.e-elgar.com/shop/collaboration-and-public-service-delivery"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Collaboration in Public Service Delivery'; return true"
+onmouseout="window.status='';return true;">Collaboration in Public Service Delivery</a>
+(2019);
+<a href="https://www.e-elgar.com/shop/making-policies-work"
+style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Making Policies Work'; return true"
+onmouseout="window.status='';return true;">
+Making Policies Work</a> (2019);
+<a href="https://www.routledge.com/Routledge-Handbook-of-Policy-Design/Howlett-Mukherjee/p/book/9780815369189"
+style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Routledge Handbook of Policy Design'; return true"
+onmouseout="window.status='';return true;">Routledge Handbook
+of Policy Design</a> (2019);
+<a href="https://www.routledge.com/Policy-Styles-and-Policy-Making-Exploring-the-Linkages/Howlett-Tosun/p/book/9781138085688"
+style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Policy Styles and Policy Making'; return true"
+onmouseout="window.status='';return true;">Policy Styles and Policy Making
+</a> (2019);
+<a href="https://link.springer.com/book/10.1007/978-3-319-54675-9" style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Policy Capacity and Governance'; return true"
+onmouseout="window.status='';return true;">Policy Capacity and Governance</a> (2018);
+<a href="https://www.e-elgar.com/shop/handbook-of-policy-formulation" style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Elgar Handbook of Policy Formulation'; return true"
+onmouseout="window.status='';return true;">Elgar Handbook of Policy Formulation</a> (2017);
+<a href="http://www.routledge.com/books/handbooks/" style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Routledge Handbook of Comparative Policy Analysis'; return true"
+onmouseout="window.status='';return true;">Routledge Handbook of Comparative Policy Analysis</a>
+(2017);
+<a href="https://www.amazon.com/Policy-Work-Canada-Professional-Analytical/dp/144264737X" style="text-decoration: none;"
+target="new" onmouseover="window.status='Policy Work in Canada'; return true"
+onmouseout="window.status=''; return true;">Policy Work in Canada</a> (2017);
+<a href="https://www.palgrave.com/gp/book/9781137477965"
+style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Varieties of Governance'; return true"
+onmouseout="window.status='';return true;">Varieties of Governance</a> (2015);
+<a href="https://www.palgrave.com/gp/book/9781137434036" style="text-decoration: none;"
+target="new"
+onmouseover="window.status='Policy Paradigms in Theory and Practice'; return true"
+onmouseout="window.status='';return true;">Policy Paradigms in Theory and Practice</a> (2015);
+<a href="http://www.routledge.com/books/details/9780415693615/" style="text-decoration: none;" target="new"
+onmouseover="window.status='Regulating Next Generation Agri-Food Bio-Technologies'; return true"
+onmouseout="window.status='';return true;">Regulating Next Generation Agri-Food Bio-Technologies</a> (2012),
+<a href="http://www.routledge.com/books/details/9780415782456/" style="text-decoration: none;" target="new"
+onmouseover="window.status='The Routledge Handbook of Public Policy'; return true"
+onmouseout="window.status='';return true;"> The Routledge Handbook of Public Policy</a> (2012),
+<a href="https://www.amazon.ca/British-Columbia-Politics-and-Government/dp/B007AO0S0Q"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='British Columbia Politics and Government'; return true"
+onmouseout="window.status='';return true;"> British Columbia Politics
+and Government</a> (2009), <a
+href="http://www.routledge.com/books/Policy-Change-in-Europe-and-North-America-isbn9780415485289"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Change in Europe and North America'; return true"
+onmouseout="window.status='';return true;"> European and North
+American Policy Change </a> (2009); <a href="https://www.amazon.ca/Canadas-Resource-Economy-Transition-Industries/dp/1552392554"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Canada\'s Resource Economy in Transition'; return true"
+onmouseout="window.status='';return true;">
+Canada's Resource Economy in Transition</a> (2008);
+<a href="http://www.amazon.ca/Policy-Analysis-Canada-Laurent-Dobuzinskis/dp/0802037879"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Analysis in Canada: The State of the Art'; return true"
+onmouseout="window.status='';return true;"> Policy Analysis in Canada</a>
+(2007);
+<a href="https://www.amazon.ca/Deregulation-Its-Discontents-Rewriting-Rules/dp/1845428773"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Deregulation and Its Discontents: Rewriting the Rules in Asia'; return true"
+onmouseout="window.status='';return true;">
+Deregulation and Its Discontents</a> (2006);
+<a href="http://www.amazon.ca/Executive-Styles-Canada-Structures-Leadership/dp/0802037852"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Executive Styles in Canada: Cabinet Structures and Leadership Practices in Canadian Government'; return true"
+onmouseout="window.status='';return true;"> Executive Styles in Canada</a>
+(2005); <a href="http://www.mqup.mcgill.ca/book.php?bookid=178744"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Designing Government: From Instruments to Governance'; return true"
+onmouseout="window.status='';return true;">Designing Government</a>
+(2005); <a href="http://www.amazon.ca/The-Real-Worlds-Canadian-Politics/dp/1551115182"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Real Worlds of Canadian Politics: Cases in Process and Policy'; return true"
+onmouseout="window.status='';return true;"> The Real Worlds of
+Canadian Politics</a> (2004); <a
+href="http://www.amazon.ca/The-Provincial-State-Canada-Territories/dp/1551113686"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Provincial State: Politics in Canadas Provinces and Territories'; return true"
+onmouseout="window.status='';return true;"> The Provincial State In
+Canada</a> (1992 &amp; 2000); <a
+href="http://www.mqup.mcgill.ca/book.php?bookid=727"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Innovation Systems in a Global Context: The North American Experience'; return true"
+onmouseout="window.status='';return true;"> Innovation Systems in a
+Global Context</a> (1998); <a
+href="http://books.google.ca/books/about/Policy_studies_in_Canada.html?id=GHaBAAAAIAAJ"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Studies in Canada: The State of the Art'; return true"
+onmouseout="window.status='';return true;"> Policy Studies in Canada</a>
+(1996), and <a href="https://www.amazon.ca/Puzzles-Power-Introduction-Political-Science/dp/0195413776"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Puzzles of Power: Introductory Readings in Political Science'; return true"
+onmouseout="window.status='';return true;"> The Puzzles of Power</a>
+(1994 &amp; 1998).
+His articles have been published in <a
+href="http://scholar.google.com/scholar?q=michael+howlett&amp;ie=UTF-8&amp;oe=UTF-8&amp;hl=en&amp;btnG=Search"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Google Scholar'; return true"
+onmouseout="window.status='';return true;"> numerous professional
+journals</a> in Canada, the United States, Europe, Latin America, Asia,
+and Australia and New Zealand.
+Dr. Howlett was founding member and
+Secretary-Treasurer (1995-2006) of the <a
+href="http://www.bcpsa.ca/" style="text-decoration: none;"
+target="new"
+onmouseover="window.status='British Columbia Political Studies Association'; return true"
+onmouseout="window.status='';return true;"> British Columbia Political
+Studies Association </a> and co-editor of its <a
+href="http://morris.mcmaster.ca/ipac20/ipac.jsp?session=1143231404X2C.8&amp;profile=lib&amp;uri=link=3100007%7E%214020778%7E%213100001%7E%213100002&amp;aspect=basic_search&amp;menu=search&amp;ri=1&amp;source=%7E%21morris&amp;term=British+Columbia+Political+Studies+Association.&amp;index=AUTHO"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='British Columbia Political Studies Association Proceedings'; return true"
+onmouseout="window.status='';return true;">
+Proceedings</a>.
+He was editor of the <a
+href="http://www.cpsa-acsp.ca/polcan.shtml"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='CPSA POLCAN Listserv'; return true"
+onmouseout="window.status='';return true;">
+POLCAN listserver </a> (1995-1997) and currently edits the <a
+href="https://cas.sfu.ca/cgi-bin/WebObjects/cas.woa/wa/login?service=https%3A%2F%2Flist.sfu.ca%2Fcgi-bin%2FWebObjects%2FMaillist2.woa%2F5&allow=sfu" style="text-decoration: none;"
+target="new"
+onmouseover="window.status='CAN-POL Listserv'; return true"
+onmouseout="window.status='';return true;">
+CAN-POL Maillist </a> (2008-present).
+He was also English language
+co-editor of the
+<a href="https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Canadian Journal of Political Science'; return true"
+onmouseout="window.status='';return true;"> Canadian Journal of
+Political Science </a> (2002-2006),
+co-editor of the <a href="http://www.degruyter.com/view/j/wpsr"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='World Political Science Review'; return true"
+onmouseout="window.status='';return true;"> World Political Science
+Review</a> (2003-2014),
+Associate Editor of the
+<a href="https://www.tandfonline.com/loi/rjnr20"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Journal of Natural Resources Policy Research'; return true"
+onmouseout="window.status='';return true;"> Journal of Natural Resources
+Policy Research,</a> (2011-2013)
+and administrative editor of the <a
+href="http://www.cpsr.ca" style="text-decoration: none;" target="new"
+onmouseover="window.status='Canadian Political Science Review'; return true"
+onmouseout="window.status='';return true;"> Canadian Political Science
+Review</a> (2007-2010). He
+is currently organizer of the <a href="http://www.policy-design.org" style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Design Lab'; return true"
+onmouseout="window.status=''; return true;">Policy Design Lab</a> and
+editor of the <a href="http://annualreviewofpolicydesign.com" style="text-decoration: none;" target="new"
+onmouseover="window.status='Annual Review of Policy Design'; return true"
+onmouseout="window.status=''; return true;">Annual Review of Policy Design</a>
+and <a href="http://www.springer.com/social+sciences/political+science/journal/11077"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Sciences'; return true"
+onmouseout="window.status=''; return true;">Policy Sciences</a>,
+and
+is co-editor of
+<a href="https://www.tandfonline.com/loi/rpdp20"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Design and Practice'; return true"
+onmouseout="window.status='';return true;">Policy Design and Practice</a>,
+<a href="https://www.tandfonline.com/toc/fcpa20/current"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Journal of Comparative Policy Analysis'; return true"
+onmouseout="window.status='';return true;"> Journal of Comparative
+Policy Analysis</a> (Book Review Editor 2001-2006),
+<a href="https://www.tandfonline.com/loi/rpas20"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy &amp; Society'; return true"
+onmouseout="window.status='';return true;"> Policy &amp; Society</a>,
+the
+<a href="https://utorontopress.com/ca/books/by-series/studies-in-comparative-political-economy-and-public-policy"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='University of Toronto Press Series in Comparative Political Economy and Public Policy'; return true"
+onmouseout="window.status='';return true;"> University of Toronto
+Press Series in Comparative Political Economy and Public Policy</a>,
+the <a href="https://policy.bristoluniversitypress.co.uk/international-library-of-policy-analysis"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Press International Library of Policy Analysis'; return true"
+onmouseout="window.status='';return true;"> Policy Press International
+Library of Policy Analysis</a>,
+<a href="http://www.cambridge.org/sg/academic/subjects/politics-international-relations/comparative-politics/series/cambridge-studies-comparative-public-policy"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Cambridge Studies in Comparative Public Policy'; return true"
+onmouseout="window.status='';return true;">
+Cambridge Studies in Comparative Public Policy</a>
+and
+<a href="https://www.cambridge.org/core/series/elements-in-public-policy/11D8EF76A1D579EDAA071355B6744334#"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Cambridge Elements of Public Policy'; return true"
+onmouseout="window.status='';return true;">
+Cambridge Elements of Public Policy</a>.
+He served on the Editorial Boards of
+<a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1754-7121"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Canadian Public Administration'; return true"
+onmouseout="window.status='';return true;"> Canadian Public
+Administration </a> (1996-2003); <a
+href="http://www.blackwellpublishing.com/journal.asp?ref=0190-292X"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Studies Journal'; return true"
+onmouseout="window.status='';return true;"> Policy Studies Journal </a>
+(1992-2003), <a
+href="http://www.cambridge.org/journals/journal_catalogue.asp%0A%09?historylinks=ALPHA&amp;mnemonic=CJP"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Canadian Journal of Political Science'; return true"
+onmouseout="window.status='';return true;">
+Canadian Journal of Political Science </a> (2006-2010),
+<a href="http://slg.sagepub.com/"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='State and Local Government Review'; return true"
+onmouseout="window.status='';return true;"> State and Local Government
+Review</a> (2007-2010),
+<a href="http://journals.cambridge.org/action/displayJournal?jid=PUP"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='The Journal of Public Policy'; return true"
+onmouseout="window.status='';return true;"> Journal of Public Policy </a> (2010-2018),
+<a href="http://www.bcstudies.com/"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='BC Studies'; return true"
+onmouseout="window.status='';return true;">BC Studies,</a>
+(2011-2018) and
+<a href="https://onlinelibrary.wiley.com/journal/15406210"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Public Administration Review'; return true"
+onmouseout="window.status='';return true;">Public Administration Review
+</a> (2011-2015)
+and currently sits on the Editorial Boards of
+<a href="https://journals.openedition.org/irpp/"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='IRPP'; return true"
+onmouseout="window.status='';return true;">International Review of Public Policy,</a>
+<a href="https://onlinelibrary.wiley.com/journal/23806567"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='European Policy Analysis'; return true"
+onmouseout="window.status='';return true;">European Policy Analysis,</a>
+<a href="http://www.springer.com/social+sciences/political+science/journal/11077" style="text-decoration: none;" target="new"
+onmouseover="window.status='Policy Sciences'; return true"
+onmouseout="window.status='';return true;">Policy Sciences,</a>
+<a href="http://ojs.unbc.ca/index.php/cpsr" style="text-decoration: none;" target="new"
+onmouseover="window.status='Canadian Political Science Review'; return true"
+onmouseout="window.status='';return true;">Canadian Political Science Review,</a>
+<a href="http://www.journals.elsevier.com/forest-policy-and-economics/"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Forest Policy and Economics'; return true"
+onmouseout="window.status='';return true;">Forest Policy and Economics,</a>
+<a href="https://www.tandfonline.com/loi/rrpa20"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='International Review of Public Administration'; return true"
+onmouseout="window.status='';return true;">International Review of Public Administration</a>,
+<a href="https://www.tandfonline.com/loi/rapp20"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Journal of Asian Public Policy'; return true"
+onmouseout="window.status='';return true;">Journal of Asian Public Policy</a>,
+<a href="https://cpar.net/index.php/cpar"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Chinese Public Administration Review'; return true"
+onmouseout="window.status='';return true;">Chinese Public Administration Review</a>,
+<a href="https://www.ipsonet.org/publications/open-access/china-policy-journal"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='China Policy Journal'; return true"
+onmouseout="window.status='';return true;">China Policy Journal</a>,
+<a href="http://www.rivisteweb.it/issn/1722-1137"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Revista Italian di Politiche Pubbliche'; return true"
+onmouseout="window.status='';return true;">Revista Italiana di Politiche Pubbliche</a>,
+<a href="http://www.journals.elsevier.com/energy-research-and-social-science/"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Energy Research &amp; Social Science'; return true"
+onmouseout="window.status='';return true;">Energy Research &amp; Social Science</a>,
+<a href="http://www.tandfonline.com/loi/rjpp20#.VuIqD5N95E4"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Journal of European Public Policy'; return true"
+onmouseout="window.status='';return true;">Journal of European Public Policy</a>,
+<a href="https://academic.oup.com/ppmg"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Perspectives on Public Management and Governance'; return true"
+onmouseout="window.status='';return true;">Perspectives on Public Management and Governance, </a>
+<a href="https://www.emeraldinsight.com/series/ppg"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Public Policy &amp; Governance'; return true"
+onmouseout="window.status='';return true;"> Public Policy and Governance
+Series,</a>
+<a href="https://www.palgrave.com/in/series/14465" style="text-decoration: none;" target="new"
+onmouseover="window.status='Palgrave Studies in the Political Economy of Public Policy'; return true"
+onmouseout="window.status=''; return true;">Palgrave Studies in the Political Economy of Public Policy</a>,
+<a href="http://www.rowmaninternational.com/series/challenging-governance"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Rowman Series on Challenging Governance'; return true"
+onmouseout="window.status=''; return true;">
+Rowman Series on Challenging Governance</a>,
+<a href="https://www.palgrave.com/gp/politics-and-international-studies/public-policy"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Palgrave Studies in National Governance and Emerging Technologies'; return true"
+onmouseout="window.status=''; return true;">
+Palgrave Studies in National Governance and Emerging Technologies</a>,
+and
+<a href="https://www.routledge.com/Routledge-Studies-in-Energy-Transitions/book-series/RSENT"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='Routledge Studies in Energy Transitions'; return true"
+onmouseout="window.status=''; return true;">
+Routledge Studies in Energy Transitions</a>.
+He is the founder and past Chair (2010-2018)
+of <a href="http://rc30.ipsa.org/" style="text-decoration: none;" target="new">Research Committee 30 (Comparative Public Policy)</a> of the
+<a href="http://www.ipsa.org/research-committees/rclist/RC30" style="text-decoration: none;" target="new"
+onmouseover="window.status='International Political Science Association'; return true"
+onmouseout="window.status=''; return true;">International Political Science Association</a>
+and sits on the Executive Committee of the
+<a href="http://www.icpublicpolicy.org/"
+style="text-decoration: none;" target="new"
+onmouseover="window.status='International Public Policy Association'; return true"
+onmouseout="window.status=''; return true;">International Public Policy Association</a>.
+</font>
+</td>
+<td width="14%">
+<p align="left">
+<font size="5">
+<b><a href="http://www.sfu.ca/politics/people/profiles/howlett.html" style="text-decoration: none;" target="new"><font color="lightblue">Michael
+Howlett,</font></a> <a href="https://rsc-src.ca/" style="text-decoration: none;" target="new"><font color="lightblue">FRSC</font></a></b>
+</font>
+<p>
+<font size="2">
+<b>Burnaby Mountain Professor,
+<br>ex-Canada Research Chair (Tier 1)</b>
+<br>
+<a href="http://www.sfu.ca/politics.html" target="new"> Department
+of Political Science</a><br>
+<a href="http://www.sfu.ca" target="new">Simon Fraser University</a>
+<br>
+8888 University Drive <br>
+Burnaby, British Columbia <br>
+Canada, V5A 1S6 <br>
+Phone: (778) 782.3082<br>
+Fax: (778) 782.4786<br>
+<a href="mailto:michaelpatrickhowlett@gmail.com" style="text-decoration: none;"
+target="new"><font color="blue">michaelpatrickhowlett@gmail.com</font></a>
+<br>
+<a href="https://orcid.org/0000-0003-4689-740X" style="text-decoration: none;"
+target="new"><font color="blue">ORCID 0000-0003-4689-740x</font></a>
+</font>
+  <br>
+  <a href="https://hits.sh/www.michaelhowlett.ca/"><img alt="Hits" src="https://hits.sh/www.michaelhowlett.ca.svg?style=flat-square&label=.&color=ffffff&labelColor=ffffff"/></a>
+</td>
+</tr>
+</table>
+<table align="center" style="border-collapse: collapse;">
+<tr>
+<td>
+<center><font size="2">
+<a href="documents"
+style="text-decoration: none;" target="new"><font color="goldenrod">personal .pdfs</font></a>
+|
+<a href="https://scholar.google.com.sg/citations?user=f5Sz0fwAAAAJ&hl=en&oi=ao"
+style="text-decoration: none;" target="new"><font color="goldenrod">google scholar</font></a>
+|
+<a href="publications.html"
+style="text-decoration: none;" target="new"><font color="goldenrod">list of publications</font></a>
+|
+<a href="https://www.researchgate.net/home"
+style="text-decoration: none;" target="new"><font color="goldenrod">
+researchgate</font></a>
+|
+<a href="https://sfu.academia.edu/MichaelHowlett"
+style="text-decoration: none;" target="new"><font color="goldenrod">
+academia.edu</font></a>
+|
+<a href="https://www.deepdyve.com/search?query=michael+howlett"
+style="text-decoration: none;" target="new"><font color="goldenrod">
+deepdyve</font></a>
+|
+<a href="https://scholar.google.com/scholar?q=howlett+michael"
+style="text-decoration: none;" target="new"><font color="goldenrod">sci-hub .pdfs</font></a>
+|
+<a href="http://sci-hub.cc/"
+style="text-decoration: none;" target="new"><font color="goldenrod">sci-hub search</font></a>
+|
+<a href="https://www.google.com/search?tbm=bks&q=howlett+michael#tbm=bks&q=michael+howlett"
+style="text-decoration: none;" target="new"><font color="goldenrod">
+google books</font></a>
+|
+<a href="http://gen.lib.rus.ec/search.php?req=Howlett+%2Bmichael+&open=0&res=25&view=simple&phrase=1&column=author"
+style="text-decoration: none;" target="new"><font color="goldenrod">
+libgen books</font></a>
+</font></center>
+</td>
+</tr>
+<tr>
+<td>
+<center><font size="2"> <a
+href="https://my.sfu.ca/account/"
+style="text-decoration: none;" target="new">my</a> <a
+href="https://cas.sfu.ca/cas/login?service=https%3A%2F%2Fmaillist.sfu.ca%2Fcgi-bin%2FWebObjects%2FMaillist2.woa%2F7&allow=sfu" style="text-decoration: none;"
+target="new">mng</a> <a href="http://go.sfu.ca" target="new"
+style="text-decoration: none;">go</a>
+<a href="https://fast.sfu.ca/menu.aspx" style="text-decoration: none;" target="new">fast</a>
+<a href="https://myINFO.sfu.ca"
+style="text-decoration: none;" target="new">inf</a>
+<a href="https://outlook.office.com" style="text-decoration: none;" target="new">mail</a>
+<a href="https://cas.sfu.ca/cas/login?method=POST&service=https://fins.erp.sfu.ca/psp/fsprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL" style="text-decoration: none;" target="new">fins</a>
+<a href="http://www.lib.sfu.ca" target="new"
+style="text-decoration: none;">lib</a> <a
+href="https://cv.its.sfu.ca/" target="new"
+style="text-decoration: none;">cv</a>
+<a href="https://www.facebook.com/groups/126893383998818/"
+style="text-decoration: none;" target="new">bi</a>
+</font> </center>
+</td>
+</tr>
+<tr>
+<td>
+<center><font size="1">
+<a href="http://cypressmountain.com" style="text-decoration: none;"
+target="new"><font color="#a0a0a0">created: </font></a>
+<a href="https://bowenferry.ca/"
+style="text-decoration: none;" target="new"><font color="#a0a0a0">nov.16,1995</font></a><font color="#a0a0a0">&nbsp;</font>
+<a href="http://sports.espn.go.com/nhl/scoreboard"
+style="text-decoration: none;" target="new"><font color="#a0a0a0">revised:jan.21,2004</font></a><font color="#a0a0a0">&nbsp;</font>
+<a href="https://www.bcferries.com/schedules/mainland/biva-current.php"
+style="text-decoration: none;" target="new"><font color="#a0a0a0">updated: feb.14.2009 & dec 27,2019</font></a>
+<a href="https://www.bcferries.com/current_conditions/actualDepartures.html"
+style="text-decoration: none;" target="new"><font color="#a0a0a0">last updated: </font></a>
+<a href="http://orca.bcferries.com:8080/cc/settings/includes/maps/route5.html"
+style="text-decoration: none;" target="new"><font color="#a0a0a0">july 14, 2026</font></a>
+</td>
+</tr>
+</table>
+</td>
+<td width="6%">
+&nbsp; &nbsp; &nbsp;
+</td>
+</tr>
+</table>
+</body>
+</html>
